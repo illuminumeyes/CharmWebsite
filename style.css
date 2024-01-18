@@ -380,20 +380,20 @@ body {
   
   /* Pagination */
   
-  .pagination{
+  .page-list{
     padding:8px;
     text-align:center;
     font-weight:bold;
   }
   
-  .pagination a{
+  .page-list a{
     border-top: 3px solid white;
     display: inline-block;
     padding:8px 16px;
     transition:0.4s;
   }
   
-  .pagination a:hover{
+  .page-list a:hover{
     text-decoration: none;
     border-top:3px solid black;
   }
