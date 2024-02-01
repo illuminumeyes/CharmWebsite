@@ -51,7 +51,6 @@ textarea:focus {
 #banner {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.2) url("img/logo.png");
@@ -62,12 +61,37 @@ textarea:focus {
   color: white;
 }
 
-#banner h3 {
-  background: black;
-  border-radius: 8px;
-  padding: 0 24px;
-  font-size: 24px;
+#banner h1 {
+  background: rgba(255, 255, 255, 0);
+  align-items: center;
+  color: white;
+  padding-left: 30px;
+
 }
+
+#banner h2 {
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 30px;
+  width: 70%;
+
+}
+
+#banner a {
+  font-size: 20px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 20px;
+
+}
+
 
 /* Search Box */
 
@@ -119,6 +143,7 @@ nav ul {
   list-style: none;
   justify-content: space-around;
   align-items: center;
+  text-align: justify;
   height: 100%;
   margin: 0;
 }
@@ -286,6 +311,177 @@ section {
   color: white;
 }
 
+/*CHARM Values*/
+
+values {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+values h2 {
+  font-size: 32px;
+  align-content: start;
+}
+
+values h3 {
+  font-size: 125%;
+  flex-basis: 100%;
+  text-align: justify;
+}
+
+.values-display {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#community {
+  padding: 0.5%;
+  border-radius: 40px;
+  background-color: #FFDB58;
+  font-size: auto;
+  width: 48%;
+  height: 100%;
+  margin: 2;
+  text-align: center;
+}
+
+#community .pop-up {
+  display: none;
+  background-color: #FFDB58;
+  position: absolute;
+  height: auto;
+  border-radius: 40px;
+  text-align: center;
+}
+
+values .pop-up h3 {
+  text-align: center;
+  font-size: 125%;
+}
+
+values .pop-up ul {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 100%;
+}
+
+values .pop-up ul li {
+  padding-left: 1%;
+
+}
+
+#community:hover .pop-up {
+  display: contents;
+}
+
+#holistic {
+  padding: 0.5%;
+  border-radius: 40px;
+  background-color: #FF6961;
+  font-size: auto;
+  width: 48%;
+  height: 48%;
+  margin: 2;
+  text-align: center;
+}
+
+#holistic .pop-up {
+  display: none;
+  position: absolute;
+  height: auto;
+  border-radius: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  align-items: center;
+  margin: 2;
+  background-color: #FF6961;
+}
+
+#holistic:hover .pop-up {
+  display: contents;
+  transition: 0.8s;
+}
+
+#accessible {
+  padding: 0.5%;
+  border-radius: 40px;
+  background-color: #77dd77;
+  font-size: 100%;
+  width: 48%;
+  height: 100%;
+  margin: 2;
+  text-align: center;
+}
+
+#accessible .pop-up {
+  display: none;
+  position: absolute;
+  height: auto;
+  border-radius: 40px;
+  text-align: center;
+  margin: 2;
+  background-color: #77dd77;
+}
+
+#accessible:hover .pop-up {
+  display: contents;
+}
+
+#rights-based {
+  padding: 0.5%;
+  border-radius: 40px;
+  background-color: #87CEEB;
+  font-size: 100%;
+  width: 48%;
+  height: 100%;
+  margin: 2;
+  text-align: center;
+}
+
+#rights-based .pop-up {
+  display: none;
+  position: absolute;
+  height: auto;
+  border-radius: 40px;
+  text-align: center;
+  margin: 2;
+  background-color: #87CEEB;
+}
+
+#rights-based:hover .pop-up {
+  display: contents;
+}
+
+#mental-health {
+  padding: 0.5%;
+  border-radius: 40px;
+  background-color: #F8C8DC;
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 2;
+  text-align: center;
+}
+
+#mental-health .pop-up {
+  display: none;
+  position: absolute;
+  height: auto;
+  border-radius: 40px;
+  text-align: center;
+  margin: 2;
+  background-color: #F8C8DC;
+}
+
+#mental-health:hover .pop-up {
+  display: contents;
+}
+
+
+
 /* Footer */
 
 footer {
@@ -301,7 +497,6 @@ footer a {
 
 footer #left-footer {
   flex: 1;
-  border-right: 1px solid red;
   padding-left: 32px;
 }
 
