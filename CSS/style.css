@@ -1,3 +1,10 @@
+/*
+Theme Name: CHARM Index
+Author: Chi Wai Wan
+Description: Official Theme for CHARM
+Version:  1.0
+*/
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -18,6 +25,11 @@ p {
 
 main {
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  padding-left:10%;
+  padding-right:10%
 }
 
 a {
@@ -265,65 +277,117 @@ section {
   text-align: center;
 }
 
-/* Card */
-
-.card-image {
-  transition: 0.4s;
+.history{
+  text-align: justify;
+  padding-left: 30px;
+  background-color: rgb(252, 152, 152);
+  grid-column-end: span 2;
+}
+.history h2{
+  background-color: lavender;
+  display:inline-flex;
+  justify-content: center;
+  font-size: 32px;
+  padding: 20px;
 }
 
-.card-image:hover {
-  box-shadow: 0 10px 6px -6px #777;
+.history p{
+  padding-right: 10px;
+  text-align: center;
+  font-size: 24px;
 }
 
-.card .card-description {
-  padding: 0 8px;
+#history-grid{
+  display: grid;
+  font-size: 18px;
+  padding-right: 5%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 30px;
+  row-gap: 10px;
+  padding-left: 20px;
+  justify-content: center;
 }
 
-.card-meta-blogpost {
-  color: #333;
-  font-size: 14px;
-  padding: 16px;
-  font-family: 'Roboto Slab', serif;
+#history-grid p{
+  text-align: left;
+  font-size: 18px;
 }
 
-.card-meta-blogpost a {
-  color: #333;
+#history-grid .box{
+  grid-column: span 1;
 }
 
-/* Button Read more */
-
-.btn-readmore {
-  padding: 8px 24px;
-  border: 3px solid black;
-  transition: 0.4s;
-  display: inline-block;
-  margin-bottom: 24px;
-  margin-left: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  background: white;
+#history-grid .box-a{
+  grid-column: span 3;
 }
 
-.btn-readmore:hover {
-  background: red;
-  text-decoration: none;
-  padding: 8px 64px 8px 24px;
-  color: white;
+#history-grid .box-b{
+  grid-column: span 2;
 }
 
+
+.contact {
+  grid-column: span 1;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.contact h2{
+  font-weight: 900;
+  font-size: 32px;
+  padding: 20px;
+  background-color: lavender ;
+  color: black;
+  display: inline-flex
+}
+
+.contact h3{
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0px;
+}
+
+.contact h4{
+  font-weight: 500;
+}
+.contact h5{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contact
+
+.contact a:hover{
+  border-bottom: 100px ;
+  border-color: #111;
+}
+
+.cic {
+  padding: 20px;
+  grid-column: span 2;
+}
+.cic h2{
+  font-size: 32px;
+
+}
+
+.cic p{
+  font-size: 13pts;
+  text-align: justify;
+}
 /*CHARM Values*/
 
-values {
+.values {
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-values h2 {
+.values h2 {
   font-size: 32px;
   align-content: start;
 }
 
-values h3 {
+.values h3 {
   font-size: 125%;
   flex-basis: 100%;
   text-align: justify;
@@ -355,19 +419,19 @@ values h3 {
   text-align: center;
 }
 
-values .pop-up h3 {
+ values .pop-up h3 {
   text-align: center;
   font-size: 125%;
 }
 
-values .pop-up ul {
+.values .pop-up ul {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 100%;
 }
 
-values .pop-up ul li {
+.values .pop-up ul li {
   padding-left: 1%;
 
 }
