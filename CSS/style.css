@@ -25,11 +25,7 @@ p {
 
 main {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  padding-left:10%;
-  padding-right:10%
+  
 }
 
 a {
@@ -277,11 +273,29 @@ section {
   text-align: center;
 }
 
+/*About Page*/
+
+.about{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  padding-left:5%;
+  padding-right:5%
+}
+
+#carouselExampleIndicators{
+  display:flex;
+  justify-content: center;
+  align-content:center ;
+  width: 70%;
+  margin: auto;
+}
+
 .history{
   text-align: justify;
   padding-left: 30px;
   background-color: rgb(252, 152, 152);
-  grid-column-end: span 2;
+  grid-column-end: span 4;
 }
 .history h2{
   background-color: lavender;
@@ -355,7 +369,6 @@ section {
   font-size: 18px;
 }
 
-.contact
 
 .contact a:hover{
   border-bottom: 100px ;
@@ -363,8 +376,9 @@ section {
 }
 
 .cic {
-  padding: 20px;
-  grid-column: span 2;
+  padding: 40px 20px ;
+  grid-column: span 5;
+
 }
 .cic h2{
   font-size: 32px;
@@ -372,14 +386,22 @@ section {
 }
 
 .cic p{
-  font-size: 13pts;
-  text-align: justify;
+  font-size: 18px;
+  text-align: left;
 }
 /*CHARM Values*/
 
+.sub-heading{
+  font-size: 24px;
+  padding-left: 40px;
+}
+
 .values {
   justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  row-gap: 30px;
+  column-gap: 50px;
+  padding: 15px 40px;
 }
 
 .values h2 {
@@ -391,159 +413,70 @@ section {
   font-size: 125%;
   flex-basis: 100%;
   text-align: justify;
+  grid-column: span 2;
 }
 
-.values-display {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.values .description{
+  padding: 10px 20px;
 }
 
 #community {
   padding: 0.5%;
   border-radius: 40px;
   background-color: #FFDB58;
-  font-size: auto;
-  width: 48%;
-  height: 100%;
+  font-size: 18px;
+  height: auto;
   margin: 2;
   text-align: center;
+  grid-column: span 1;
 }
 
-#community .pop-up {
-  display: none;
-  background-color: #FFDB58;
-  position: absolute;
-  height: auto;
-  border-radius: 40px;
-  text-align: center;
-}
-
- values .pop-up h3 {
-  text-align: center;
-  font-size: 125%;
-}
-
-.values .pop-up ul {
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 100%;
-}
-
-.values .pop-up ul li {
-  padding-left: 1%;
-
-}
-
-#community:hover .pop-up {
-  display: contents;
-}
 
 #holistic {
   padding: 0.5%;
   border-radius: 40px;
   background-color: #FF6961;
-  font-size: auto;
-  width: 48%;
-  height: 48%;
+  font-size: 18px;
   margin: 2;
   text-align: center;
 }
 
-#holistic .pop-up {
-  display: none;
-  position: absolute;
-  height: auto;
-  border-radius: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  text-align: center;
-  align-items: center;
-  margin: 2;
-  background-color: #FF6961;
-}
 
-#holistic:hover .pop-up {
-  display: contents;
-  transition: 0.8s;
-}
 
 #accessible {
   padding: 0.5%;
   border-radius: 40px;
   background-color: #77dd77;
-  font-size: 100%;
-  width: 48%;
-  height: 100%;
+  font-size: 18px;
   margin: 2;
   text-align: center;
 }
 
-#accessible .pop-up {
-  display: none;
-  position: absolute;
-  height: auto;
-  border-radius: 40px;
-  text-align: center;
-  margin: 2;
-  background-color: #77dd77;
-}
 
-#accessible:hover .pop-up {
-  display: contents;
-}
 
 #rights-based {
   padding: 0.5%;
   border-radius: 40px;
   background-color: #87CEEB;
-  font-size: 100%;
-  width: 48%;
+  font-size: 18px;
   height: 100%;
   margin: 2;
   text-align: center;
+  grid-row: span 2;
 }
 
-#rights-based .pop-up {
-  display: none;
-  position: absolute;
-  height: auto;
-  border-radius: 40px;
-  text-align: center;
-  margin: 2;
-  background-color: #87CEEB;
-}
 
-#rights-based:hover .pop-up {
-  display: contents;
-}
 
 #mental-health {
   padding: 0.5%;
   border-radius: 40px;
   background-color: #F8C8DC;
-  font-size: 100%;
-  width: 100%;
+  font-size: 18px;
   height: 100%;
   margin: 2;
   text-align: center;
+  grid-column: span 1;
 }
-
-#mental-health .pop-up {
-  display: none;
-  position: absolute;
-  height: auto;
-  border-radius: 40px;
-  text-align: center;
-  margin: 2;
-  background-color: #F8C8DC;
-}
-
-#mental-health:hover .pop-up {
-  display: contents;
-}
-
 
 
 /* Footer */
